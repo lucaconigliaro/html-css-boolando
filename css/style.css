@@ -4,6 +4,23 @@
     box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+}
+
+
+/* Utilities */
+/* Typography */
+
+.new-price {
+    color: red;
+}
+
+.price-text {
+    display: inline-block;
+    margin-top: -20px;
+}
+
 /* Common */
 /* Layout */
 
@@ -23,14 +40,67 @@
 
 .row {
     display: flex;
-    flex-wrap:wrap ;
+    flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 10px;
 }
+
 .col {
     width: calc(95%/3);
-    
+    position: relative;
+    top: 0;
+
     /* Debug */
     border: 2px solid blue;
     min-height: 200px;
+}
+
+.card {
+    position: relative;
+}
+
+.info {
+    position: relative;
+    padding: 5px;
+    bottom: 55px;
+    color: white;
+    z-index: 1;
+}
+
+.discount {
+    background-color: red;
+}
+
+.sos {
+    background-color: green;
+}
+
+.heart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    font-size: 40px;
+    padding: 5px;
+    background-color: white;
+    z-index: 1;
+}
+
+.heart:hover {
+    color: red;
+}
+
+.front {
+    position: relative;
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card:hover .front {
+    z-index: 1;
+
 }
